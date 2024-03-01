@@ -1,0 +1,21 @@
+{
+  "type": "app",
+  "version": "2.0.0",
+  "name": "Serve custom Pose Estimation model",
+  "description": "Demo app for integrating your custom pose estimation model",
+  "categories": [
+    "neural network",
+    "images",
+    "pose estimation",
+    "keypoints detection",
+    "serve",
+    "development"
+  ],
+  "need_gpu": true,
+  "community_agent": false,
+  "session_tags": ["deployed_nn_keypoints"],
+  "docker_image": "supervisely/mmpose-demo:1.0.2",
+  "entrypoint": "python -m uvicorn src.main:m.app --host 0.0.0.0 --port 8000",
+  "port": 8000,
+  "headless": true
+}
