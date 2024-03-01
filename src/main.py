@@ -19,7 +19,7 @@ print("Using device:", device)
 
 weights_url = "https://4mizfq.sn.files.1drv.com/y4mmN4HVKiAoyjCvPyKAWSK2Tkv5UaooeY2XmcUdxRwftMfZZ35N2kOIeyvgHzCiB2wW6yhYBdjU_nsoa2eHkSE7iWL903bTmUPrFWR3U5fPeMEXWOLVZwN2HaD-JRETuuDiLF249A_zeR3ZyxCLjnF4svHU2RLo3lgy918r59l5yA5UBrOCIE2-KpUFiF3nFo8Ae4Hf8ybzWYv7t7mbwotTQ"
 
-class MyModel(sly.nn.inference.InstanceSegmentation):
+class MyModel(sly.nn.inference.PoseEstimation):
     def load_on_device(
         self,
         model_dir: str,
