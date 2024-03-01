@@ -1,0 +1,10 @@
+torch==2.0.1
+torchvision==0.15.2
+openmim
+timm==0.4.9
+einops
+pyyaml==6.0
+ffmpeg-python==0.2.0
+supervisely==6.72.143
+# git+https://github.com/ViTAE-Transformer/ViTPose.git
+# mim install mmcv-full==1.7.1
